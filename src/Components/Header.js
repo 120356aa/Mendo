@@ -1,12 +1,24 @@
 import React from 'react';
-import { HeaderWrap } from '../Styles/HeaderStyles.js';
+import { 
+  HeaderWrap,
+  Logo,
+  HamNav,
+  HamLine,
+ } from '../Styles/HeaderStyles.js';
  
-const Header = () => {
-  return (
-    <HeaderWrap>
-      <h1>SOME TEXT HERE</h1>
-    </HeaderWrap>
-  );
+class Header extends React.Component {
+  render() {
+    return(
+      <HeaderWrap>
+        <Logo></Logo>
+        <HamNav>
+          <HamLine></HamLine>
+          <HamLine></HamLine>
+          <HamLine></HamLine>
+        </HamNav>
+      </HeaderWrap>
+    );
+  }
 }
 
 export default Header;
