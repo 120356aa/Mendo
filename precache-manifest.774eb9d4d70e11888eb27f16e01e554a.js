@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "765f4f57ccec03c91053",
-    "url": "/120356aa/Mendo/static/js/main.bd8e9e57.chunk.js"
+    "revision": "307b2052af1f73527c2f",
+    "url": "/120356aa/Mendo/static/js/main.68b54249.chunk.js"
   },
   {
     "revision": "a0ff385588861cedda01",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/120356aa/Mendo/static/js/2.d9945297.chunk.js"
   },
   {
-    "revision": "7a4cb89d82d3198cb01a945ad7dc7288",
+    "revision": "b901a2c8800f877a326132236898a483",
     "url": "/120356aa/Mendo/index.html"
   }
 ];

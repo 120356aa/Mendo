@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/120356aa/Mendo/precache-manifest.6ce6a883df177d84acc1a1ddfd8b5bd5.js"
+  "/120356aa/Mendo/precache-manifest.774eb9d4d70e11888eb27f16e01e554a.js"
 );
 
 workbox.clientsClaim();
