@@ -9,6 +9,9 @@ import TwitterOn from '../../Resrouces/tw-sm-on.png';
 
 export const Social = styled.div`
   display: flex;
+    @media(min-width: 660px) {
+      margin: 0 0 0 22px;
+    }
 `;
 
   export const Twitch = styled.div`
@@ -21,7 +24,7 @@ export const Social = styled.div`
   `;
 
   export const Youtube = styled(Twitch)`
-    margin: 12px 14px 0 12px;
+    margin: 12px 18px 0 16px;
     background: url('${YoutubeOff}');
       &:hover { background: url('${YoutubeOn}'); }
   `;

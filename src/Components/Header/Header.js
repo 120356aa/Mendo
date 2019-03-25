@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Social from './Social.js';
 import Nav from './Nav.js';
+import MainNav from './MainNav.js';
 
 import { 
   HeaderWrap,
+  HeaderInner,
   Logo,
   HamNav,
   HamLine,
@@ -25,14 +27,17 @@ class Header extends React.Component {
   render() {
     return(
       <HeaderWrap>
-        <Logo/>
-        <Social/>
-        <HamNav onClick={this.handleMenuToggle}>
-          <HamLine></HamLine>
-          <HamLine></HamLine>
-          <HamLine></HamLine>
-        </HamNav>
-        {this.state.mobileMenu ? <Nav/> :  null }
+        <HeaderInner>
+          <Logo/>
+          <Social/>
+          <MainNav/>
+          <HamNav onClick={this.handleMenuToggle}>
+            <HamLine></HamLine>
+            <HamLine></HamLine>
+            <HamLine></HamLine>
+          </HamNav>
+          {this.state.mobileMenu ? <Nav/> :  null }
+        </HeaderInner>
       </HeaderWrap>
     );
   }
