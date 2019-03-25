@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-  SocialBox,
   Social,
   Twitch,
   Youtube,
@@ -10,13 +9,11 @@ import {
 
 const SocialComp = () => {
   return (
-    <SocialBox>
-      <Social>
-        <Twitch />
-        <Youtube />
-        <Twitter />
-      </Social>
-    </SocialBox>
+    <Social>
+      <Twitch />
+      <Youtube />
+      <Twitter />
+    </Social>
   );
 }
 

@@ -17,8 +17,8 @@ export const HeaderWrap = styled.div`
 
   // Logo
   export const Logo = styled.div`
-    width: 78px;
-    height: 78px;
+    width: 54px;
+    height: 54px;
     align-self: flex-start;
     background: url('${MobileLogo}');
   `;
@@ -38,6 +38,6 @@ export const HeaderWrap = styled.div`
 
     export const HamLine = styled.div`
       width: 100%;
-      border: 3px solid white;
+      border: 2px solid white;
       border-radius: 4px;
     `;
