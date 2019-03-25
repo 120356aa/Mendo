@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Social from './Header/Social.js';
-import Nav from './Header/Nav.js';
+import Social from './Social.js';
+import Nav from './Nav.js';
 
 import { 
   HeaderWrap,
   Logo,
   HamNav,
   HamLine,
- } from '../Styles/HeaderStyles.js';
+ } from '../../Styles/Header/HeaderStyles.js';
  
 class Header extends React.Component {
   state = {

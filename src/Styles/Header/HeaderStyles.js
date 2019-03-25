@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import MobileLogo from '../Resrouces/mendo-logo-mobile.jpg';
+import MobileLogo from '../../Resrouces/mendo-logo-mobile.jpg';
 
 export const HeaderWrap = styled.div`
   width: 100%;
