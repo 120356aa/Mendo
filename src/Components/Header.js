@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import { 
   HeaderWrap,
   Logo,
+  SocialBox,
+  Social,
+  Twitch,
+  Youtube,
+  Twitter,
   HamNav,
   HamLine,
   MobileMenu,
@@ -19,7 +24,6 @@ class Header extends React.Component {
 
   handleMenuToggle = () => {
     let closed = !this.state.mobileMenu;
-
     if (closed) this.setState({ mobileMenu: true })
     else this.setState({ mobileMenu: false });
   };
@@ -27,7 +31,15 @@ class Header extends React.Component {
   render() {
     return(
       <HeaderWrap>
-        <Logo></Logo>
+        <Logo/>
+        <SocialBox>
+          <Social>
+            <Twitch />
+            <Youtube />
+            <Twitter />
+          </Social>
+        </SocialBox>
+
         <HamNav onClick={this.handleMenuToggle}>
           <HamLine></HamLine>
           <HamLine></HamLine>
