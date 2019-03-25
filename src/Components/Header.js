@@ -1,23 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Social from './Header/Social.js';
+import Nav from './Header/Nav.js';
+
 import { 
   HeaderWrap,
   Logo,
-  SocialBox,
-  Social,
-  Twitch,
-  Youtube,
-  Twitter,
   HamNav,
   HamLine,
-  MobileMenu,
-  NavTriangle,
-  StyledLink,
  } from '../Styles/HeaderStyles.js';
  
 class Header extends React.Component {
-
   state = {
     mobileMenu: false
   }
@@ -32,28 +26,13 @@ class Header extends React.Component {
     return(
       <HeaderWrap>
         <Logo/>
-        <SocialBox>
-          <Social>
-            <Twitch />
-            <Youtube />
-            <Twitter />
-          </Social>
-        </SocialBox>
-
+        <Social/>
         <HamNav onClick={this.handleMenuToggle}>
           <HamLine></HamLine>
           <HamLine></HamLine>
           <HamLine></HamLine>
         </HamNav>
-        {this.state.mobileMenu ? (
-          <MobileMenu>
-            <NavTriangle/>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/">About</StyledLink>
-            <StyledLink to="/">Community</StyledLink>
-            <StyledLink to="/">Contact</StyledLink>
-          </MobileMenu>
-        ) : ( null )}
+        {this.state.mobileMenu ? <Nav/> :  null }
       </HeaderWrap>
     );
   }

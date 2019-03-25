@@ -1,13 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-
 import MobileLogo from '../Resrouces/mendo-logo-mobile.jpg';
-import TwitchOff from '../Resrouces/twt-sm-off.png';
-import TwitchOn from '../Resrouces/twt-sm-on.png';
-import YoutubeOff from '../Resrouces/yt-sm-off.png';
-import YoutubeOn from '../Resrouces/yt-sm-on.png';
-import TwitterOff from '../Resrouces/tw-sm-off.png';
-import TwitterOn from '../Resrouces/tw-sm-on.png';
 
 export const HeaderWrap = styled.div`
   width: 100%;
@@ -31,39 +23,6 @@ export const HeaderWrap = styled.div`
     background: url('${MobileLogo}');
   `;
 
-  // Socials
-  export const SocialBox = styled.div`
-  `;
-
-    export const Social = styled.div`
-      display: flex;
-      margin-right: 14px;
-      margin-left: 18px;
-    `;
-
-      export const Twitch = styled.div`
-        width: 30px;
-        height: 30px;
-        margin: 12px 0 0 0;
-        cursor: pointer;
-        background: url('${TwitchOff}');
-          &:hover {
-            background: url('${TwitchOn}');
-          }
-      `;
-
-      export const Youtube = styled(Twitch)`
-        margin: 12px 14px 0 12px;
-        background: url('${YoutubeOff}');
-          &:hover { background: url('${YoutubeOn}'); }
-      `;
-
-      export const Twitter = styled(Twitch)`
-        margin-top: 13px;
-        background: url('${TwitterOff}');
-          &:hover { background: url('${TwitterOn}'); }
-      `;
-
   // Menu Toggle
   export const HamNav = styled.div`
     width: 28px;
@@ -81,49 +40,4 @@ export const HeaderWrap = styled.div`
       width: 100%;
       border: 3px solid white;
       border-radius: 4px;
-    `;
-
-  // Mobile Menu
-  export const MobileMenu = styled.div`
-    width: 180px;
-    border: 1px solid #F9F9F9;
-    border-radius: 6px 0 6px 6px;
-    background-color: #F9F9F9;
-    position: absolute;
-    right: 26px;
-    top: 82px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    align-items: center;
-  `;
-
-    export const MobileNav = styled.div`
-
-    `;
-
-    export const NavTriangle = styled.div`
-      width: 0;
-      height: 0;
-      border-bottom: 18px solid #F9F9F9;
-      border-left: 18px solid transparent;
-      position: absolute;
-      align-self: flex-end;
-      right: -1px;
-      margin-top: -68px;
-    `;
-
-    export const StyledLink = styled(Link)`
-      color: black;
-      padding: 6px 0 6px 0;
-      text-decoration: none;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-        &:hover { color: #8dbe55; }
-        &:nth-child(2){
-          padding-top: 12px;
-        }
-        &:last-child {
-          padding-bottom: 12px;
-        }
     `;
