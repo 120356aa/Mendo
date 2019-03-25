@@ -5,11 +5,15 @@ import MobileLogo from '../Resrouces/mendo-logo-mobile.jpg';
 export const HeaderWrap = styled.div`
   width: 100%;
   background-color: #171717;
-  height: 56px;
+  height: 54px;
   position: fixed;
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  // border-bottom: 1px solid grey;
+  -webkit-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
+  -moz-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
+  box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
 `;
 
   // Logo

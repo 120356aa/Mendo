@@ -13,5 +13,5 @@ export const GlobalStyles = createGlobalStyle`
 
 export const Wrap = styled.div`
   width: 100%;
-  background-color: #171717;
+  background-color: #616161;
 `;
