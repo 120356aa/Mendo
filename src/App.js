@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
 import Header from './Components/Header.js';
 import Banner from './Components/Banner.js';
@@ -13,7 +14,8 @@ class App extends Component {
       <Wrap>
         <GlobalStyles/>
         <Header/>
-        <Banner/>
+        <Route path="/" component={Banner}/>
+
       </Wrap>
     );
   }

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import MobileLogo from '../Resrouces/mendo-logo-mobile.jpg';
 
 export const HeaderWrap = styled.div`
   width: 100%;
-  border: 1px solid blue;
   background-color: #171717;
   height: 56px;
   position: fixed;
@@ -14,9 +14,11 @@ export const HeaderWrap = styled.div`
 
   // Logo
   export const Logo = styled.div`
-    width: 100px;
-    height: 100%;
-    border: 1px solid red;
+    width: 78px;
+    height: 78px;
+    // border: 1px solid red;
+    // margin: 5px 0 0 6px;
+    background: url('${MobileLogo}');
   `;
 
   // Menu Toggle
@@ -74,7 +76,7 @@ export const HeaderWrap = styled.div`
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;
         &:hover { color: #8dbe55; }
-        &:first-child{
+        &:nth-child(2){
           padding-top: 12px;
         }
         &:last-child {
