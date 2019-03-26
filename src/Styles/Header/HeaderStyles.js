@@ -7,10 +7,10 @@ export const HeaderWrap = styled.div`
   background-color: #1F1F1F;
   height: 54px;
   position: fixed;
-  z-index: 1;
-  -webkit-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
-  -moz-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
-  box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
+  z-index: 2;
+  // -webkit-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
+  // -moz-box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
+  // box-shadow: 0px 3px 6px -1px rgba(59,59,59,1);
 `;
 
   export const HeaderInner = styled.div`
@@ -49,7 +49,7 @@ export const HeaderWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
-      @media(min-width: 660px) { 
+      @media(min-width: 600px) { 
         display: none;
       }
   `;

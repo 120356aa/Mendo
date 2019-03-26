@@ -15,7 +15,6 @@ class App extends Component {
         <GlobalStyles/>
         <Header/>
         <Route path="/" component={Banner}/>
-
       </Wrap>
     );
   }

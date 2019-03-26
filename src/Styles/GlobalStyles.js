@@ -8,10 +8,13 @@ export const GlobalStyles = createGlobalStyle`
 
     @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i');
     font-family: 'Montserrat', sans-serif;
+
+    @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900');
+    font-family: 'Alegreya Sans SC', sans-serif;
   }
 `;
 
 export const Wrap = styled.div`
   width: 100%;
-  background-color: #616161;
+  background-color: #4B4B4B;
 `;

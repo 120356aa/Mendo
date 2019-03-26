@@ -5,7 +5,8 @@ export const Nav = styled.div`
   display: none;
   margin-left: auto;
   margin-right: 10px;
-    @media(min-width: 660px) { display: flex; }
+    @media(min-width: 600px) { display: flex; }
+    @media(min-width: 1100px) { height: 60px; }
 `;
 
   export const NavA = styled(Link)`
@@ -13,7 +14,6 @@ export const Nav = styled.div`
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    // font-weight: 600;
-    padding: 20px 12px 20px 12px;
+    padding: 20px 18px 20px 18px;
       &:hover { color: #8dbe55; }
   `;

@@ -13,6 +13,7 @@ export const MobileMenu = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
+  z-index: 2;
 `;
 
   export const NavTriangle = styled.div`

@@ -9,7 +9,7 @@ import TwitterOn from '../../Resrouces/tw-sm-on.png';
 
 export const Social = styled.div`
   display: flex;
-    @media(min-width: 660px) {
+    @media(min-width: 600px) {
       margin: 0 0 0 22px;
     }
 `;
@@ -17,7 +17,7 @@ export const Social = styled.div`
   export const Twitch = styled.div`
     width: 30px;
     height: 30px;
-    margin: 12px 0 0 0;
+    margin: 13px 0 0 0;
     cursor: pointer;
     background: url('${TwitchOff}');
       &:hover { background: url('${TwitchOn}'); }
