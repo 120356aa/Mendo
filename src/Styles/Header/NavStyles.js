@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export const MobileMenu = styled.div`
   width: 180px;
@@ -27,17 +27,32 @@ export const MobileMenu = styled.div`
     margin-top: -68px;
   `;
 
-  export const StyledLink = styled(Link)`
-    color: black;
-    padding: 6px 0 6px 0;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-      &:hover { color: #8dbe55; }
-      &:nth-child(2){
-        padding-top: 12px;
-      }
-      &:last-child {
-        padding-bottom: 12px;
-      }
-  `;
+  export const StyledLink = styled.a`
+  color: black;
+  padding: 6px 0 6px 0;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+    &:hover { color: #8dbe55; }
+    &:nth-child(2){
+      padding-top: 12px;
+    }
+    &:last-child {
+      padding-bottom: 12px;
+    }
+`;
+
+  // export const StyledLink = styled(Link)`
+  //   color: black;
+  //   padding: 6px 0 6px 0;
+  //   text-decoration: none;
+  //   font-family: 'Open Sans', sans-serif;
+  //   font-weight: 600;
+  //     &:hover { color: #8dbe55; }
+  //     &:nth-child(2){
+  //       padding-top: 12px;
+  //     }
+  //     &:last-child {
+  //       padding-bottom: 12px;
+  //     }
+  // `;
