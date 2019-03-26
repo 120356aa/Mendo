@@ -30,7 +30,7 @@ export const BannerCont = styled.div`
 
     export const BannerH1 = styled.h1`
       font-family: 'Alegreya Sans SC', sans-serif;
-      color: #F5F5F5;
+      color: #FAFAFA;
       font-size: 66px;
       font-weight: 400;
       text-align: center;
