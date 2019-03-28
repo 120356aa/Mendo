@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Header from './Components/Header/Header.js';
 import Banner from './Components/Banner/Banner.js';
+import Recent from './Components/Recent/Recent.js';
 import Sponsor from './Components/Sponsor/Sponsor.js';
 
 import 'reset-css';
@@ -15,8 +16,8 @@ class App extends Component {
       <Wrap>
         <GlobalStyles/>
         <Header/>
-        <Banner/>
-        {/* <Route path="/" component={Banner}/> */}
+        <Route exact path="/" component={Banner}/>
+        <Route exact path="/" component={Recent}/>
         {/* <Route path="/" component={Sponsor}/> */}
       </Wrap>
     );
