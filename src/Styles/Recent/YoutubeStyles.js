@@ -24,7 +24,6 @@ export const YoutubeWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    // align-items: center;
     margin: 20px 0 0 0;
   `;
 

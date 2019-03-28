@@ -14,6 +14,8 @@ import {
 } from '../../Styles/Recent/YoutubeStyles.js';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 
+console.log(process.env.REACT_APP_API);
+
 class Youtube extends React.Component {
   state = {
     desc: '',
@@ -29,7 +31,7 @@ class Youtube extends React.Component {
 
   GetVideo() {
     axios
-      .get('https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuDbeAOzSLrCe9zZ94LXlHgpmY1KMrfDk&channelId=UCg9bCZl8859x6QrSfGbdOnw&part=snippet,id&order=date&maxResults=1')
+      .get(`https://www.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API}Id=UCg9bCZl8859x6QrSfGbdOnw&part=snippet,id&order=date&maxResults=1`)
       .then(res => {
         this.setState({
           desc: res.data.items[0].snippet.description,

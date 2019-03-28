@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Youtube from './Youtube.js';
+import Twitch from './Twitch.js';
 
 import {
   RecentWrap,
@@ -10,6 +11,7 @@ const Recent = () => {
   return (
      <RecentWrap>
        <Youtube />
+       <Twitch />
      </RecentWrap>
   );
 }
