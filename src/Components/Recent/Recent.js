@@ -5,13 +5,16 @@ import Twitch from './Twitch.js';
 
 import {
   RecentWrap,
+  RecentW,
 } from '../../Styles/Recent/RecentStyles.js';
 
 const Recent = () => {
   return (
      <RecentWrap>
-       <Youtube />
-       <Twitch />
+      <RecentW>
+        <Youtube />
+        <Twitch />
+      </RecentW>
      </RecentWrap>
   );
 }

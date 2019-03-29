@@ -9,17 +9,31 @@ export const YoutubeWrap = styled.div`
   -webkit-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
   -moz-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
   box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+    @media(min-width: 600px) { padding: 100px 0 120px 0; }
+    @media(min-width: 900px) {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    @media(min-width: 1100px) {
+      width: 50%;
+      align-items: flex-start;
+      padding: 140px 0 160px 40px;
+    }
 `;
 
   export const ContBox = styled.div`
-    width: 100%;
+    width: 320px;
+      @media(min-width: 1100px) { width: 380px; }
   `;
 
     export const ContH2 = styled.div`
       color: #333333;
-      font-size: 32px;
+      font-size: 34px;
       font-family: 'Alegreya Sans SC', sans-serif;
       text-align: center;
+        @media(min-width: 600px) { font-size: 40px;}
+        @media(min-width: 900px) { text-align: left;}
     `;
 
   export const VidBox = styled.div`
@@ -27,12 +41,22 @@ export const YoutubeWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
+      @media(min-width: 600px) { margin: 60px 0 0 0;}
+      @media(min-width: 900px) { margin: 20px 0 0 0;}
+      @media(min-width: 1100px) {
+        width: 380px;
+        height: 260px;
+      }
   `;
 
     export const Vid = styled.img`
-      width: 320px;
+      width: 100%;
       height: 180px;
+        @media(min-width: 1100px) {
+          width: 380px;
+          height: 260px;
+        }
     `;
 
     export const Title = styled.p`
@@ -47,6 +71,7 @@ export const YoutubeWrap = styled.div`
       display: flex;
       justify-content: space-between;
       margin-top: 14px;
+        @media(min-width: 1100px) { justify-content: flex-start; }
     `;
 
       export const WatchVid = styled.button`
@@ -63,7 +88,12 @@ export const YoutubeWrap = styled.div`
             border: 3px solid #A70000;
             color: white;
           }
+          @media(min-width: 1100px) {
+            width: auto;
+            padding: 8px 16px 8px 16px;
+          }
       `;
 
       export const Channel = styled(WatchVid)`
+        @media(min-width: 1100px) { margin-left: 20px; }
       `;

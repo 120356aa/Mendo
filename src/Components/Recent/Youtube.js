@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Media from 'react-media';
 
 import {
   YoutubeWrap,
@@ -13,8 +14,6 @@ import {
   Channel,
 } from '../../Styles/Recent/YoutubeStyles.js';
 import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
-
-console.log(process.env.REACT_APP_API);
 
 class Youtube extends React.Component {
   state = {
@@ -46,12 +45,20 @@ class Youtube extends React.Component {
 
   render() {
     return (
+      
       <YoutubeWrap>
+        {console.log(this.state.thumbnailHigh)}
         <ContBox>
           <ContH2>Newest Video</ContH2>
         </ContBox>
         <VidBox>
-          <Vid src={this.state.thumbnailMed.url} />
+          <Media query="(min-width: 1100px)">
+            {matches => matches ? (
+              <Vid src={this.state.thumbnailMed.url} />
+            ) : (
+              <Vid src={this.state.thumbnailMed.url} />
+            )}
+          </Media>
           <Buttons>
             <WatchVid>Watch Vid</WatchVid>
             <Channel>Channel</Channel>
