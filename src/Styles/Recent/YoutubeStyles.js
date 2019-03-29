@@ -41,7 +41,7 @@ export const YoutubeWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
       @media(min-width: 600px) { margin: 60px 0 0 0;}
       @media(min-width: 900px) { margin: 20px 0 0 0;}
       @media(min-width: 1100px) {
@@ -69,20 +69,30 @@ export const YoutubeWrap = styled.div`
 
     export const Buttons = styled.div`
       display: flex;
-      justify-content: space-between;
-      margin-top: 14px;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      background-color: #333333;
+      position: absolute;
+      width: 320px;
+      height: 180px;
+        ${VidBox}:hover & {
+          opacity: 0.9;
+        }
         @media(min-width: 1100px) { justify-content: flex-start; }
     `;
 
       export const WatchVid = styled.button`
-        color: #333333;
-        background-color: #FBFBFB;
+        color: #FBFBFB;
+        background-color: #333333;
         font-size: 15px;
         font-family: 'Alegreya Sans SC', sans-serif;
-        border: 3px solid #333333;
-        padding: 8px 0 8px 0;
-        width: 47%;
+        border: 3px solid #FBFBFB;
+        width: 140px;
+        height: 40px;
         cursor: pointer;
+        margin: 0 0 4px 0;
           &:hover {
             background-color: #A70000;
             border: 3px solid #A70000;
@@ -95,5 +105,6 @@ export const YoutubeWrap = styled.div`
       `;
 
       export const Channel = styled(WatchVid)`
-        @media(min-width: 1100px) { margin-left: 20px; }
+        margin: 4px 0 0 0;
+          @media(min-width: 1100px) { margin-left: 20px; }
       `;

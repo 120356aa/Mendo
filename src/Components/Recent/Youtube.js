@@ -52,13 +52,7 @@ class Youtube extends React.Component {
           <ContH2>Newest Video</ContH2>
         </ContBox>
         <VidBox>
-          <Media query="(min-width: 1100px)">
-            {matches => matches ? (
-              <Vid src={this.state.thumbnailMed.url} />
-            ) : (
-              <Vid src={this.state.thumbnailMed.url} />
-            )}
-          </Media>
+          <Vid src={this.state.thumbnailMed.url} />
           <Buttons>
             <WatchVid>Watch Vid</WatchVid>
             <Channel>Channel</Channel>

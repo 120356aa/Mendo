@@ -38,7 +38,7 @@ export const TwitchWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
       @media(min-width: 600px) { margin: 60px 0 0 0;}
       @media(min-width: 900px) { margin: 20px 0 0 0;}
       @media(min-width: 1100px) {
@@ -58,14 +58,23 @@ export const TwitchWrap = styled.div`
 
     export const Buttons = styled.div`
       display: flex;
-      justify-content: space-between;
-      margin-top: 14px;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      background-color: #333333;
+      position: absolute;
+      width: 320px;
+      height: 180px;
+        ${TwitchBox}:hover & {
+          opacity: 0.9;
+        }
         @media(min-width: 1100px) { justify-content: flex-start; }
     `;
 
       export const WatchTwitch = styled.button`
         color: #FBFBFB;
-        background-color: #6F11B1;
+        background-color: #333333;
         font-size: 15px;
         font-family: 'Alegreya Sans SC', sans-serif;
         border: 3px solid #FBFBFB;
@@ -73,9 +82,9 @@ export const TwitchWrap = styled.div`
         width: 47%;
         cursor: pointer;
           &:hover {
-            background-color: #FBFBFB;
-            border: 3px solid #FBFBFB;
-            color: #333333;
+            background-color: #6F11B1;
+            border: 3px solid #6F11B1;
+            color: #FBFBFB;
           }
           @media(min-width: 900px) {
             color: #333333;

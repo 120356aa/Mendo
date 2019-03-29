@@ -51,13 +51,12 @@ class Twitch extends React.Component {
     return (
       <TwitchWrap>
         <ContBox>
-          <ContH2>Stream</ContH2>
+          <ContH2>Twitch Stream</ContH2>
         </ContBox>
         <TwitchBox>
           <Twitchh src={!this.state.online ? TwitchOfflineSM : this.state.thumbnail}/>
           <Buttons>
             <WatchTwitch>Watch Stream</WatchTwitch>
-            <Channel>Channel</Channel>
           </Buttons>
         </TwitchBox>
       </TwitchWrap>
