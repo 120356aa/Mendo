@@ -43,7 +43,7 @@ export const TwitchWrap = styled.div`
       @media(min-width: 900px) { margin: 20px 0 0 0;}
       @media(min-width: 1100px) {
         width: 380px;
-        height: 260px;
+        height: 240px;
       }
   `;
 
@@ -52,7 +52,7 @@ export const TwitchWrap = styled.div`
       height: 180px;
         @media(min-width: 1100px) {
           width: 380px;
-          height: 260px;
+          height: 240px;
         }
     `;
 
