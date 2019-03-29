@@ -2,10 +2,13 @@ import styled from 'styled-components';
 
 export const YoutubeWrap = styled.div`
   width: 100%;
-  padding: 60px 0 60px 0;
+  padding: 80px 0 100px 0;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+  box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
 `;
 
   export const ContBox = styled.div`

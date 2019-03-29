@@ -3,10 +3,22 @@ import axios from 'axios';
 
 import {
   TwitchWrap,
+  ContBox,
+  ContH2,
+  TwitchBox,
+  Twitchh,
+  Buttons,
+  WatchTwitch,
+  Channel,
 } from '../../Styles/Recent/TwitchStyles.js';
+import TwitchOfflineSM from '../../Resrouces/twitch-offline-sm.jpg';
 
 class Twitch extends React.Component {
   state = {
+    online: false,
+    title: '',
+    thumbnail: '',
+    viewerCount: '',
   }
 
   componentDidMount() {
@@ -14,28 +26,40 @@ class Twitch extends React.Component {
   }
 
   GetStream() {
-    axios
-      .get('')
-      .then(res => {
+    axios({
+      method: 'get',
+      url: 'https://api.twitch.tv/helix/streams?user_login=mendokusaii',
+      headers: {
+        "client-id": process.env.REACT_APP_TWITCH_API,
+      },
+    })
+    .then(res => {
+      if (res.data.data.length === 0) {
+        this.setState({ online: false })
+      } else {
         this.setState({
+          title: res.data.data[0].title,
+          thumbnail: 'https://static-cdn.jtvnw.net/previews-ttv/live_user_mendokusaii-320x180.jpg',
+          viewerCount: res.data.data[0].viewer_count,
         })
-      })
-      .catch(err => console.log(err));
+      }
+    })
+    .catch(err => console.log(err));
   }
 
   render() {
     return (
       <TwitchWrap>
-        {/* <ContBox>
-          <ContH2>Newest Video</ContH2>
+        <ContBox>
+          <ContH2>Stream</ContH2>
         </ContBox>
-        <VidBox>
-          <Vid src={this.state.thumbnailMed.url} />
+        <TwitchBox>
+          <Twitchh src={!this.state.online ? TwitchOfflineSM : this.state.thumbnail}/>
           <Buttons>
-            <WatchVid>Watch Vid</WatchVid>
+            <WatchTwitch>Watch Stream</WatchTwitch>
             <Channel>Channel</Channel>
           </Buttons>
-        </VidBox> */}
+        </TwitchBox>
       </TwitchWrap>
     );
   }
