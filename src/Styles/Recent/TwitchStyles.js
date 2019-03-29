@@ -82,9 +82,9 @@ export const TwitchWrap = styled.div`
         width: 47%;
         cursor: pointer;
           &:hover {
-            background-color: #6F11B1;
-            border: 3px solid #6F11B1;
-            color: #FBFBFB;
+            background-color: #FBFBFB;
+            border: 3px solid #FBFBFB;
+            color: #333333;
           }
           @media(min-width: 900px) {
             color: #333333;

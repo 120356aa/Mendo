@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 
 import Header from './Components/Header/Header.js';
 import Banner from './Components/Banner/Banner.js';
+import About from './Components/About/About.js';
 import Recent from './Components/Recent/Recent.js';
 import Sponsor from './Components/Sponsor/Sponsor.js';
 
@@ -17,6 +18,7 @@ class App extends Component {
         <GlobalStyles/>
         <Header/>
         <Route exact path="/" component={Banner}/>
+        <Route exact path="/" component={About} />
         <Route exact path="/" component={Recent}/>
         {/* <Route path="/" component={Sponsor}/> */}
       </Wrap>

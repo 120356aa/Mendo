@@ -6,9 +6,9 @@ export const YoutubeWrap = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
-  box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+  // -webkit-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+  // -moz-box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
+  // box-shadow: 0px 0px 8px 0px rgba(56,56,56,0.8);
     @media(min-width: 600px) { padding: 100px 0 120px 0; }
     @media(min-width: 900px) {
       -webkit-box-shadow: none;
@@ -94,9 +94,9 @@ export const YoutubeWrap = styled.div`
         cursor: pointer;
         margin: 0 0 4px 0;
           &:hover {
-            background-color: #A70000;
-            border: 3px solid #A70000;
-            color: white;
+            background-color: #FBFBFB;
+            border: 3px solid #FBFBFB;
+            color: #333333;
           }
           @media(min-width: 1100px) {
             width: auto;
