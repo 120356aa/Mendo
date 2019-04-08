@@ -32,7 +32,7 @@ export const BannerCont = styled.div`
       font-family: 'Alegreya Sans SC', sans-serif;
       color: #FAFAFA;
       font-size: 66px;
-      font-weight: 400;
+      font-weight: 900;
       text-align: center;
       text-shadow: 1px 1px 8px #303030;
       letter-spacing: 2px;
@@ -65,6 +65,7 @@ export const BannerCont = styled.div`
         color: #ffffff;
         font-family: 'Alegreya Sans SC', sans-serif;
         font-size: 16px;
+        font-weight: 800;
         text-shadow: 1px 1px 8px #303030;
         letter-spacing: 1px;
         cursor: pointer;

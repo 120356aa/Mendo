@@ -23,7 +23,8 @@ export const TwitchWrap = styled.div`
 
     export const ContH2 = styled.div`
       color: #FBFBFB;
-      font-size: 34px;
+      font-size: 30px;
+      font-weight: 800;
       font-family: 'Alegreya Sans SC', sans-serif;
       text-align: center;
         @media(min-width: 600px) { font-size: 40px;}

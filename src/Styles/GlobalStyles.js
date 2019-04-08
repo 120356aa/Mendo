@@ -12,6 +12,12 @@ export const GlobalStyles = createGlobalStyle`
   //   @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900');
   //   font-family: 'Alegreya Sans SC', sans-serif;
   // }
+
+  // font-family: 'Yellowtail', cursive;
+  // font-family: 'Merriweather Sans', sans-serif;
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Oswald', sans-serif;
+  // font-family: 'Lato', sans-serif;
 `;
 
 export const Wrap = styled.div`

@@ -18,7 +18,7 @@ class App extends Component {
         <GlobalStyles/>
         <Header/>
         <Route exact path="/" component={Banner}/>
-        <Route exact path="/" component={About} />
+        {/* <Route exact path="/" component={About} /> */}
         <Route exact path="/" component={Recent}/>
         {/* <Route path="/" component={Sponsor}/> */}
       </Wrap>

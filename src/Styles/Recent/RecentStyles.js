@@ -3,9 +3,14 @@ import styled from 'styled-components';
 export const RecentWrap = styled.div`
   width: 100%;
   background-color: #FBFBFB;
+  position: absolute;
+  // display: flex;
+  // flex-flow: column nowrap;
+  // align-items: center;
 `;
 
   export const RecentW = styled.div`
+      
       @media(min-width: 900px) {
         display: flex;
         justify-content: space-between;
