@@ -16,7 +16,11 @@ export const YoutubeWrap = styled.div`
   -webkit-box-shadow: 0px 0px 10px 0px #7D7D7D;
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
-    @media(min-width: 600px) { padding: 100px 0 120px 0; }
+    @media(min-width: 600px) {
+      padding: 80px 0 60px 0;
+      margin-top: 110px;
+      margin-bottom: 110px;
+    }
     @media(min-width: 900px) {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
@@ -50,6 +54,9 @@ export const YoutubeWrap = styled.div`
     position: absolute;
     margin-top: -114px;
     background: url('${YT}');
+      @media(min-width: 600px) {
+        margin-top: -124px;
+      }
   `;
 
   export const VidBox = styled.div`
@@ -57,7 +64,7 @@ export const YoutubeWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-      @media(min-width: 600px) { margin: 60px 0 0 0;}
+      @media(min-width: 600px) { margin: 0px 0 0 0;}
       @media(min-width: 900px) { margin: 20px 0 0 0;}
       @media(min-width: 1100px) {
         width: 380px;
