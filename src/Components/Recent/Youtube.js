@@ -4,6 +4,7 @@ import Media from 'react-media';
 
 import {
   YoutubeWrap,
+  Heading,
   YTArrow,
   ContBox,
   ContH2,
@@ -51,6 +52,7 @@ class Youtube extends React.Component {
         {/* <ContBox>
           <ContH2>Newest  Video</ContH2>
         </ContBox> */}
+        {/* <Heading>Recent Content</Heading> */}
         <YTArrow></YTArrow>
         <VidBox>
           <Vid src={this.state.thumbnailMed.url} />

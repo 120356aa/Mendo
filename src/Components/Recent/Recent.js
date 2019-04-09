@@ -6,6 +6,7 @@ import Twitch from './Twitch.js';
 import {
   RecentWrap,
   RecentW,
+  Heading,
 } from '../../Styles/Recent/RecentStyles.js';
 
 const Recent = () => {

@@ -5,7 +5,7 @@ export const YoutubeWrap = styled.div`
   width: 400px;
   padding: 70px 0 46px 0;
   margin: 0px auto;
-  margin-top: 120px;
+  margin-top: 130px;
   margin-bottom: 160px;
   display: flex;
   flex-flow: column nowrap;
@@ -21,13 +21,30 @@ export const YoutubeWrap = styled.div`
       margin-bottom: 170px;
     }
     @media(min-width: 900px) {
-
+      margin-top: 160px;
     }
     @media(min-width: 1100px) {
-      margin-top: 160px;
       margin-bottom: 160px;
     }
 `;
+
+  export const Heading = styled.h2`
+    font-size: 46px;
+    font-style: italic;
+    margin-top: -210px;
+    color: #333333;
+    text-align: center;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+      @media(min-width: 600px) {
+        margin-top: -220px;
+        font-size: 50px;
+      }
+      @media(min-width: 900px) {
+        align-self: flex-start;
+        margin-top: -230px;
+      }
+  `;
 
   export const YTArrow = styled.div`
     width: 90px;

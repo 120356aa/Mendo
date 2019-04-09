@@ -19,11 +19,10 @@ export const TwitchWrap = styled.div`
       margin-bottom: 130px;
     }
     @media(min-width: 900px) {
-      margin-top: 130px;
+      margin-top: 160px;
       margin-bottom: 170px;
     }
     @media(min-width: 1100px) {
-      margin-top: 160px;
       margin-bottom: 160px;
     }
 `;

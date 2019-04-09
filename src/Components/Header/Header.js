@@ -29,7 +29,6 @@ class Header extends React.Component {
       <HeaderWrap>
         <HeaderInner>
           <Logo/>
-          <Social/>
           <MainNav/>
           <HamNav onClick={this.handleMenuToggle}>
             <HamLine></HamLine>
