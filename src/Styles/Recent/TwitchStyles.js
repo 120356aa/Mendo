@@ -14,12 +14,17 @@ export const TwitchWrap = styled.div`
   -webkit-box-shadow: 0px 0px 10px 0px #7D7D7D;
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
-    @media(min-width: 600px) { padding: 100px 0 120px 0; }
-    @media(min-width: 900px) { background-color: #FBFBFB; }
+    @media(min-width: 600px) {
+      padding: 80px 0 60px 0;
+      margin-bottom: 130px;
+    }
+    @media(min-width: 900px) {
+      margin-top: 130px;
+      margin-bottom: 170px;
+    }
     @media(min-width: 1100px) {
-      width: 50%;
-      align-items: flex-end;
-      padding: 140px 40px 160px 0;
+      margin-top: 160px;
+      margin-bottom: 160px;
     }
 `;
 
@@ -29,6 +34,9 @@ export const TwitchWrap = styled.div`
     position: absolute;
     margin-top: -114px;
     background: url('${TW}');
+      @media(min-width: 600px) {
+        margin-top: -124px;
+      }
   `;
 
   export const TwitchBox = styled.div`
@@ -36,11 +44,9 @@ export const TwitchWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-      @media(min-width: 600px) { margin: 60px 0 0 0;}
-      @media(min-width: 900px) { margin: 20px 0 0 0;}
+      @media(min-width: 600px) {}
+      @media(min-width: 900px) {}
       @media(min-width: 1100px) {
-        width: 380px;
-        height: 240px;
       }
   `;
 
@@ -48,8 +54,6 @@ export const TwitchWrap = styled.div`
       width: 100%;
       height: 180px;
         @media(min-width: 1100px) {
-          width: 380px;
-          height: 240px;
         }
     `;
 
@@ -66,7 +70,6 @@ export const TwitchWrap = styled.div`
         ${TwitchBox}:hover & {
           opacity: 0.9;
         }
-        @media(min-width: 1100px) { justify-content: flex-start; }
     `;
 
       export const WatchTwitch = styled.button`
@@ -84,22 +87,17 @@ export const TwitchWrap = styled.div`
             color: #333333;
           }
           @media(min-width: 900px) {
-            color: #333333;
-            background-color: #FBFBFB;
-            border: 3px solid #333333;
+            color: #FBFBFB;
               &:hover {
-                border: 3px solid #6F11B1;
-                background-color: #6F11B1;
-                color: #FBFBFB;
+                border: 3px solid #FBFBFB;
+                background-color: #FBFBFB;
+                color: #333333;
               }
           }
           @media(min-width: 1100px) {
-            width: auto;
-            padding: 8px 16px 8px 16px;
           }
 
       `;
 
       export const Channel = styled(WatchTwitch)`
-        @media(min-width: 1100px) { margin-left: 20px; }
       `;

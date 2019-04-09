@@ -10,10 +10,11 @@ export const RecentWrap = styled.div`
 `;
 
   export const RecentW = styled.div`
-      
       @media(min-width: 900px) {
+        border: 1px solid red;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-flow: row nowrap;
       }
       @media(min-width: 1100px) { 
         width: 1100px;

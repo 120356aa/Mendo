@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import YT from '../../Resrouces/yt-arrow.png';
 
 export const YoutubeWrap = styled.div`
@@ -18,18 +17,15 @@ export const YoutubeWrap = styled.div`
   box-shadow: 0px 0px 10px 0px #7D7D7D;
     @media(min-width: 600px) {
       padding: 80px 0 60px 0;
-      margin-top: 110px;
-      margin-bottom: 110px;
+      margin-top: 130px;
+      margin-bottom: 170px;
     }
     @media(min-width: 900px) {
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
+
     }
     @media(min-width: 1100px) {
-      width: 50%;
-      align-items: flex-start;
-      padding: 140px 0 160px 40px;
+      margin-top: 160px;
+      margin-bottom: 160px;
     }
 `;
 
@@ -50,10 +46,8 @@ export const YoutubeWrap = styled.div`
     flex-flow: column nowrap;
     justify-content: center;
       @media(min-width: 600px) { margin: 0px 0 0 0;}
-      @media(min-width: 900px) { margin: 20px 0 0 0;}
+      @media(min-width: 900px) { }
       @media(min-width: 1100px) {
-        width: 380px;
-        height: 240px;
       }
   `;
 
@@ -61,8 +55,6 @@ export const YoutubeWrap = styled.div`
       width: 100%;
       height: 180px;
         @media(min-width: 1100px) {
-          width: 380px;
-          height: 240px;
         }
     `;
 
@@ -87,7 +79,7 @@ export const YoutubeWrap = styled.div`
         ${VidBox}:hover & {
           opacity: 0.9;
         }
-        @media(min-width: 1100px) { justify-content: flex-start; }
+        // @media(min-width: 1100px) { justify-content: flex-start; }
     `;
 
       export const WatchVid = styled.button`
@@ -106,12 +98,11 @@ export const YoutubeWrap = styled.div`
             color: #333333;
           }
           @media(min-width: 1100px) {
-            width: auto;
-            padding: 8px 16px 8px 16px;
+            // width: auto;
+            // padding: 8px 16px 8px 16px;
           }
       `;
 
       export const Channel = styled(WatchVid)`
         margin: 4px 0 0 0;
-          @media(min-width: 1100px) { margin-left: 20px; }
       `;
