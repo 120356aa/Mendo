@@ -9,6 +9,7 @@ export const BannerWrap = styled.div`
   background-size: cover;
   opacity: 0.7;
     @media(min-width: 600px) { height: 700px; }
+    @media(min-width: 1100px) { height: 820px; }
 `;
 
 export const BannerCont = styled.div`
@@ -25,7 +26,10 @@ export const BannerCont = styled.div`
     flex-flow: column nowrap;
     margin-top: -600px;
       @media(min-width: 600px) { margin-top: -700px; }
-      @media(min-width: 1100px) { flex-flow: row nowrap; }
+      @media(min-width: 1100px) {
+        flex-flow: row nowrap;
+        margin-top: -800px;
+      }
   `;
 
     export const BannerH1 = styled.h1`
