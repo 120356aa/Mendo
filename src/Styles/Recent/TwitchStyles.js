@@ -1,12 +1,19 @@
 import styled from 'styled-components';
+import TW from '../../Resrouces/tw-icon.png';
 
 export const TwitchWrap = styled.div`
-  width: 100%;
-  padding: 80px 0 100px 0;
+  width: 400px;
+  padding: 70px 0 46px 0;
+  margin: 0px auto;
+  margin-bottom: 120px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  background-color: #6F11B1;
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #7D7D7D;
+  -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
+  box-shadow: 0px 0px 10px 0px #7D7D7D;
     @media(min-width: 600px) { padding: 100px 0 120px 0; }
     @media(min-width: 900px) { background-color: #FBFBFB; }
     @media(min-width: 1100px) {
@@ -16,30 +23,19 @@ export const TwitchWrap = styled.div`
     }
 `;
 
-  export const ContBox = styled.div`
-    width: 320px;
-      @media(min-width: 1100px) { width: 380px; }
+  export const TWicon = styled.div`
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    margin-top: -114px;
+    background: url('${TW}');
   `;
-
-    export const ContH2 = styled.div`
-      color: #FBFBFB;
-      font-size: 30px;
-      font-weight: 800;
-      font-family: 'Alegreya Sans SC', sans-serif;
-      text-align: center;
-        @media(min-width: 600px) { font-size: 40px;}
-        @media(min-width: 900px) {
-          text-align: left;
-          color: #333333;
-        }
-    `;
 
   export const TwitchBox = styled.div`
     width: 320px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 30px 0 0 0;
       @media(min-width: 600px) { margin: 60px 0 0 0;}
       @media(min-width: 900px) { margin: 20px 0 0 0;}
       @media(min-width: 1100px) {

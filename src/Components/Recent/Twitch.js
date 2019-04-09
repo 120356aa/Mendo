@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import {
   TwitchWrap,
+  TWicon,
   ContBox,
   ContH2,
   TwitchBox,
@@ -50,9 +51,10 @@ class Twitch extends React.Component {
   render() {
     return (
       <TwitchWrap>
-        <ContBox>
+        {/* <ContBox>
           <ContH2>Twitch Stream</ContH2>
-        </ContBox>
+        </ContBox> */}
+        <TWicon></TWicon>
         <TwitchBox>
           <Twitchh src={!this.state.online ? TwitchOfflineSM : this.state.thumbnail}/>
           <Buttons>

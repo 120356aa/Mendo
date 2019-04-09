@@ -6,8 +6,8 @@ export const YoutubeWrap = styled.div`
   width: 400px;
   padding: 70px 0 46px 0;
   margin: 0px auto;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 120px;
+  margin-bottom: 160px;
   display: flex;
   flex-flow: column nowrap;
   border: 1px solid #ffffff;
@@ -32,21 +32,6 @@ export const YoutubeWrap = styled.div`
       padding: 140px 0 160px 40px;
     }
 `;
-
-  export const ContBox = styled.div`
-    border: 1px solid red;
-      @media(min-width: 1100px) { width: 380px; }
-  `;
-
-    export const ContH2 = styled.div`
-      color: #333333;
-      font-size: 30px;
-      font-family: 'Alegreya Sans SC', sans-serif;
-      font-weight: 800;
-      text-align: center;
-        @media(min-width: 600px) { font-size: 40px;}
-        @media(min-width: 900px) { text-align: left;}
-    `;
 
   export const YTArrow = styled.div`
     width: 90px;
