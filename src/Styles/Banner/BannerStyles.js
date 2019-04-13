@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import BannerIMG from '../../Resrouces/BannerIMG.svg';
+import BannerIMG2 from '../../Resrouces/banner.jpg';
 import Pepe from '../../Resrouces/pepe.png';
 
 export const BannerWrap = styled.div`
   width: 100%;
   height: 600px;
-  background: url('${BannerIMG}');
+  background: url('${BannerIMG2}');
   background-size: cover;
   opacity: 0.7;
     @media(min-width: 600px) { height: 700px; }
-    @media(min-width: 1100px) { height: 820px; }
+    @media(min-width: 1100px) { height: 800px; }
 `;
 
 export const BannerCont = styled.div`
@@ -26,10 +27,7 @@ export const BannerCont = styled.div`
     flex-flow: column nowrap;
     margin-top: -600px;
       @media(min-width: 600px) { margin-top: -700px; }
-      @media(min-width: 1100px) {
-        flex-flow: row nowrap;
-        margin-top: -800px;
-      }
+      @media(min-width: 1100px) { margin-top: -780px; }
   `;
 
     export const BannerH1 = styled.h1`
@@ -41,17 +39,13 @@ export const BannerCont = styled.div`
       text-shadow: 1px 1px 8px #303030;
       letter-spacing: 2px;
         @media(min-width: 800px) { font-size: 72px; }
-        @media(min-width: 1100px) {
-          font-size: 80px;
-          &:first-child { padding-right: 8px; }
-          &:last-child { padding-left: 8px; }
-        }
+        @media(min-width: 1100px) { font-size: 80px; }
     `;
 
   export const BannerButtons = styled.div`
     display: flex;
     margin-top: 40px;
-      @media(min-width: 1100px) { margin-top: 20px; }
+      @media(min-width: 1100px) { margin-top: 40px; }
   `;
 
     export const BannerButton = styled.div`

@@ -4,7 +4,7 @@ import DesktopLogo from '../../Resrouces/mendo-logo-desktop.jpg';
 
 export const HeaderWrap = styled.div`
   width: 100%;
-  background-color: #1F1F1F;
+  background-color: #FEFEFE;
   height: 54px;
   position: fixed;
   z-index: 2;
@@ -19,7 +19,7 @@ export const HeaderWrap = styled.div`
       @media(min-width: 660px) {
         justify-content: flex-start;
       }
-      @media(min-width: 1100px) {
+      @media(min-width: 1960px) {
         width: 1100px;
         margin: 0px auto;
       }

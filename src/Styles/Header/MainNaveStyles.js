@@ -19,10 +19,11 @@ export const Nav = styled.div`
 // `;
 
   export const NavA = styled(Link)`
-    color: #F5F5F5;
+    color: #3A3A3A;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: bold;
     padding: 20px 18px 20px 18px;
       &:hover { color: #8dbe55; }
   `;

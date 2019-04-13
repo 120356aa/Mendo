@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const RecentWrap = styled.div`
   width: 100%;
-  background-color: #FBFBFB;
+  background-color: #F4F4F4;
   position: absolute;
   // display: flex;
   // flex-flow: column nowrap;
