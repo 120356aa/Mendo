@@ -3,7 +3,7 @@ import YT from '../../Resrouces/yt-arrow.png';
 
 export const YoutubeWrap = styled.div`
   width: 400px;
-  padding: 70px 0 46px 0;
+  padding: 70px 0 44px 0;
   margin: 0px auto;
   margin-top: 130px;
   margin-bottom: 160px;
@@ -16,7 +16,7 @@ export const YoutubeWrap = styled.div`
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
     @media(min-width: 600px) {
-      padding: 80px 0 60px 0;
+      padding: 80px 0 44px 0;
       margin-top: 130px;
       margin-bottom: 170px;
     }
@@ -50,7 +50,8 @@ export const YoutubeWrap = styled.div`
     width: 90px;
     height: 90px;
     position: absolute;
-    margin-top: -114px;
+    margin-top: -110px;
+    // margin-left: 190px;
     background: url('${YT}');
       @media(min-width: 600px) {
         margin-top: -124px;
@@ -71,6 +72,7 @@ export const YoutubeWrap = styled.div`
     export const Vid = styled.img`
       width: 100%;
       height: 180px;
+      border-radius: 8px;
         @media(min-width: 1100px) {
         }
     `;
@@ -90,6 +92,7 @@ export const YoutubeWrap = styled.div`
       align-items: center;
       opacity: 0;
       background-color: #333333;
+      border-radius: 8px;
       position: absolute;
       width: 320px;
       height: 180px;

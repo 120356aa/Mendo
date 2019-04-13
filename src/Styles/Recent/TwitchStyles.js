@@ -3,7 +3,7 @@ import TW from '../../Resrouces/tw-icon.png';
 
 export const TwitchWrap = styled.div`
   width: 400px;
-  padding: 70px 0 46px 0;
+  padding: 70px 0 44px 0;
   margin: 0px auto;
   margin-bottom: 120px;
   display: flex;
@@ -15,7 +15,7 @@ export const TwitchWrap = styled.div`
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
     @media(min-width: 600px) {
-      padding: 80px 0 60px 0;
+      padding: 80px 0 44px 0;
       margin-bottom: 130px;
     }
     @media(min-width: 900px) {
@@ -31,7 +31,7 @@ export const TwitchWrap = styled.div`
     width: 90px;
     height: 90px;
     position: absolute;
-    margin-top: -114px;
+    margin-top: -110px;
     background: url('${TW}');
       @media(min-width: 600px) {
         margin-top: -124px;
@@ -52,6 +52,7 @@ export const TwitchWrap = styled.div`
     export const Twitchh = styled.img`
       width: 100%;
       height: 180px;
+      border-radius: 8px;
         @media(min-width: 1100px) {
         }
     `;
@@ -66,6 +67,7 @@ export const TwitchWrap = styled.div`
       position: absolute;
       width: 320px;
       height: 180px;
+      border-radius: 8px;
         ${TwitchBox}:hover & {
           opacity: 0.9;
         }
