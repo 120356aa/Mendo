@@ -20,12 +20,8 @@ export const YoutubeWrap = styled.div`
       margin-top: 120px;
       margin-bottom: 140px;
     }
-    @media(min-width: 900px) {
-      margin-top: 160px;
-    }
-    @media(min-width: 1100px) {
-      margin-bottom: 160px;
-    }
+    @media(min-width: 900px) { margin-top: 140px; }
+    @media(min-width: 1100px) { margin-bottom: 160px; }
 `;
 
   export const Heading = styled.h2`
@@ -51,11 +47,8 @@ export const YoutubeWrap = styled.div`
     height: 90px;
     position: absolute;
     margin-top: -110px;
-    // margin-left: 190px;
     background: url('${YT}');
-      @media(min-width: 600px) {
-        margin-top: -124px;
-      }
+      @media(min-width: 600px) { margin-top: -124px; }
   `;
 
   export const VidBox = styled.div`
@@ -63,18 +56,12 @@ export const YoutubeWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-      @media(min-width: 600px) { margin: 0px 0 0 0;}
-      @media(min-width: 900px) { }
-      @media(min-width: 1100px) {
-      }
   `;
 
     export const Vid = styled.img`
       width: 100%;
       height: 180px;
       border-radius: 8px;
-        @media(min-width: 1100px) {
-        }
     `;
 
     export const Title = styled.p`
@@ -96,10 +83,7 @@ export const YoutubeWrap = styled.div`
       position: absolute;
       width: 320px;
       height: 180px;
-        ${VidBox}:hover & {
-          opacity: 0.9;
-        }
-        // @media(min-width: 1100px) { justify-content: flex-start; }
+        ${VidBox}:hover & { opacity: 0.9; }
     `;
 
       export const WatchVid = styled.button`
@@ -116,10 +100,6 @@ export const YoutubeWrap = styled.div`
             background-color: #FBFBFB;
             border: 3px solid #FBFBFB;
             color: #333333;
-          }
-          @media(min-width: 1100px) {
-            // width: auto;
-            // padding: 8px 16px 8px 16px;
           }
       `;
 

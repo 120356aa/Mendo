@@ -18,12 +18,8 @@ export const TwitchWrap = styled.div`
       padding: 80px 0 44px 0;
       margin-bottom: 130px;
     }
-    @media(min-width: 900px) {
-      margin-top: 160px;
-    }
-    @media(min-width: 1100px) {
-      margin-bottom: 160px;
-    }
+    @media(min-width: 900px) { margin-top: 140px; }
+    @media(min-width: 1100px) { margin-bottom: 160px; }
 `;
 
   export const TWicon = styled.div`
@@ -32,9 +28,7 @@ export const TwitchWrap = styled.div`
     position: absolute;
     margin-top: -110px;
     background: url('${TW}');
-      @media(min-width: 600px) {
-        margin-top: -124px;
-      }
+      @media(min-width: 600px) { margin-top: -124px; }
   `;
 
   export const TwitchBox = styled.div`
@@ -42,18 +36,12 @@ export const TwitchWrap = styled.div`
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-      @media(min-width: 600px) {}
-      @media(min-width: 900px) {}
-      @media(min-width: 1100px) {
-      }
   `;
 
     export const Twitchh = styled.img`
       width: 100%;
       height: 180px;
       border-radius: 8px;
-        @media(min-width: 1100px) {
-        }
     `;
 
     export const Buttons = styled.div`
@@ -67,9 +55,7 @@ export const TwitchWrap = styled.div`
       width: 320px;
       height: 180px;
       border-radius: 8px;
-        ${TwitchBox}:hover & {
-          opacity: 0.9;
-        }
+        ${TwitchBox}:hover & { opacity: 0.9; }
     `;
 
       export const WatchTwitch = styled.button`
@@ -94,9 +80,6 @@ export const TwitchWrap = styled.div`
                 color: #333333;
               }
           }
-          @media(min-width: 1100px) {
-          }
-
       `;
 
       export const Channel = styled(WatchTwitch)`
