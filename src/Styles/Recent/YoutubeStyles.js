@@ -5,8 +5,8 @@ export const YoutubeWrap = styled.div`
   width: 400px;
   padding: 70px 0 44px 0;
   margin: 0px auto;
-  margin-top: 130px;
-  margin-bottom: 160px;
+  margin-top: 100px;
+  margin-bottom: 120px;
   display: flex;
   flex-flow: column nowrap;
   border: 1px solid #ffffff;
@@ -17,8 +17,8 @@ export const YoutubeWrap = styled.div`
   box-shadow: 0px 0px 10px 0px #7D7D7D;
     @media(min-width: 600px) {
       padding: 80px 0 44px 0;
-      margin-top: 130px;
-      margin-bottom: 170px;
+      margin-top: 120px;
+      margin-bottom: 140px;
     }
     @media(min-width: 900px) {
       margin-top: 160px;

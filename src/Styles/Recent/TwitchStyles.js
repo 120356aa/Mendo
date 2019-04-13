@@ -5,7 +5,7 @@ export const TwitchWrap = styled.div`
   width: 400px;
   padding: 70px 0 44px 0;
   margin: 0px auto;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -20,7 +20,6 @@ export const TwitchWrap = styled.div`
     }
     @media(min-width: 900px) {
       margin-top: 160px;
-      margin-bottom: 170px;
     }
     @media(min-width: 1100px) {
       margin-bottom: 160px;

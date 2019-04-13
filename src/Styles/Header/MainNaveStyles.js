@@ -19,7 +19,7 @@ export const Nav = styled.div`
 // `;
 
   export const NavA = styled(Link)`
-    color: #3A3A3A;
+    color: #F1F1F1;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;

@@ -3,13 +3,15 @@ import {
   HeadingBox,
   HeadingBoxInner,
   H1,
+  Arrow,
 } from '../../Styles/Headings/RecentHeadingStyles.js';
 
 const RecentHeading = () => {
   return (
     <HeadingBox>
       <HeadingBoxInner>
-        <H1>Recent Content</H1>
+        <H1>Newest Content</H1>
+        <Arrow />
       </HeadingBoxInner>
     </HeadingBox>
   );
