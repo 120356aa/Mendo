@@ -3,10 +3,7 @@ import styled from 'styled-components';
 export const RecentWrap = styled.div`
   width: 100%;
   background-color: #F4F4F4;
-  position: absolute;
-  // display: flex;
-  // flex-flow: column nowrap;
-  // align-items: center;
+  padding: 10px 0 10px 0;
 `;
 
   export const RecentW = styled.div`

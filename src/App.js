@@ -7,6 +7,7 @@ import About from './Components/About/About.js';
 import RecentHeading from './Components/Headings/RecentHeading.js';
 import Recent from './Components/Recent/Recent.js';
 import Sponsor from './Components/Sponsor/Sponsor.js';
+import Footer from './Components/Footer/Footer.js';
 
 import 'reset-css';
 import { GlobalStyles } from './Styles/GlobalStyles.js';
@@ -19,10 +20,9 @@ class App extends Component {
         <GlobalStyles/>
         <Header/>
         <Route exact path="/" component={Banner}/>
-        {/* <Route exact path="/" component={About} /> */}
         <Route exact path="/" component={RecentHeading} />
         <Route exact path="/" component={Recent}/>
-        {/* <Route path="/" component={Sponsor}/> */}
+        <Route path="/" component={Footer} />
       </Wrap>
     );
   }
