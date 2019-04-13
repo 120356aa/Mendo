@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import YT from '../../Resrouces/yt-arrow.png';
 
 export const YoutubeWrap = styled.div`
-  width: 400px;
-  padding: 70px 0 44px 0;
+  width: 360px;
+  padding: 64px 0 24px 0;
   margin: 0px auto;
   margin-top: 100px;
   margin-bottom: 120px;
@@ -15,6 +15,10 @@ export const YoutubeWrap = styled.div`
   -webkit-box-shadow: 0px 0px 10px 0px #7D7D7D;
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
+    @media(min-width: 500px){
+      width: 400px;
+      padding: 70px 0 40px 0;
+    }
     @media(min-width: 600px) {
       padding: 80px 0 44px 0;
       margin-top: 120px;
@@ -46,12 +50,14 @@ export const YoutubeWrap = styled.div`
     width: 90px;
     height: 90px;
     position: absolute;
-    margin-top: -110px;
+    margin-top: -108px;
     background: url('${YT}');
+      @media(min-width: 500px) { margin-top: -114px; }
       @media(min-width: 600px) { margin-top: -124px; }
   `;
 
   export const VidBox = styled.div`
+    border: 1px solid red;
     width: 320px;
     display: flex;
     flex-flow: column nowrap;

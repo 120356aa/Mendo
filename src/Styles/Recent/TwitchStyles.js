@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import TW from '../../Resrouces/tw-icon.png';
 
 export const TwitchWrap = styled.div`
-  width: 400px;
-  padding: 70px 0 44px 0;
+  width: 360px;
+  padding: 64px 0 24px 0;
   margin: 0px auto;
   margin-bottom: 100px;
   display: flex;
@@ -14,6 +14,10 @@ export const TwitchWrap = styled.div`
   -webkit-box-shadow: 0px 0px 10px 0px #7D7D7D;
   -moz-box-shadow: 0px 0px 10px 0px #7D7D7D;
   box-shadow: 0px 0px 10px 0px #7D7D7D;
+    @media(min-width: 500px){
+      width: 400px;
+      padding: 70px 0 40px 0;
+    }
     @media(min-width: 600px) {
       padding: 80px 0 44px 0;
       margin-bottom: 130px;
@@ -26,8 +30,9 @@ export const TwitchWrap = styled.div`
     width: 90px;
     height: 90px;
     position: absolute;
-    margin-top: -110px;
+    margin-top: -108px;
     background: url('${TW}');
+      @media(min-width: 500px) { margin-top: -114px; }
       @media(min-width: 600px) { margin-top: -124px; }
   `;
 
