@@ -6,6 +6,7 @@ export const FooterWrap = styled.div`
   padding: 60px 0 60px 0;
   position: relative;
   z-index: 1;
+    @media(min-width: 600px) { padding: 80px 0 80px 0;}
 `;
 
   export const FooterInner = styled.div`
@@ -13,13 +14,16 @@ export const FooterWrap = styled.div`
       @media(min-width: 500px) {
         padding: 0 80px 0 80px;
       }
+      @media(min-width: 600px) {
+        padding: 0 100px 0 100px;
+      }
   `;
 
     export const Section = styled.div`
       display: flex;
       justify-content: space-between;
         &:last-child {
-          margin-top: 60px;
+          margin-top: 70px;
         }
     `;
 

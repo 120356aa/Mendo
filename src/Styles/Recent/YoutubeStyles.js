@@ -57,7 +57,6 @@ export const YoutubeWrap = styled.div`
   `;
 
   export const VidBox = styled.div`
-    border: 1px solid red;
     width: 320px;
     display: flex;
     flex-flow: column nowrap;

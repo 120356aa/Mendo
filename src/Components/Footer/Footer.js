@@ -37,9 +37,6 @@ const Footer = () => {
             <H4>Status</H4>
             <P>Twitch - Offline</P>
           </Status>
-          <Copyright>
-            <P>&copy; 2019 Andrey Yurlov</P>
-          </Copyright>
         </Section>
       </FooterInner>
     </FooterWrap>
