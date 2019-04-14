@@ -24,6 +24,8 @@ class Header extends React.Component {
     else this.setState({ mobileMenu: false });
   };
 
+  handleMenuClose = () => this.setState({ mobileMenu: false });
+
   render() {
     return(
       <HeaderWrap>
@@ -35,7 +37,7 @@ class Header extends React.Component {
             <HamLine></HamLine>
             <HamLine></HamLine>
           </HamNav>
-          {this.state.mobileMenu ? <Nav/> :  null }
+          {this.state.mobileMenu ? <Nav close={this.handleMenuClose} /> :  null }
         </HeaderInner>
       </HeaderWrap>
     );
