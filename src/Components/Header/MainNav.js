@@ -9,7 +9,7 @@ const MainNav = () => {
   return (
     <Nav>
       <NavA to="/">Home</NavA>
-      <NavA to="/">About</NavA>
+      <NavA to="/">Newest Content</NavA>
       <NavA to="/">Community</NavA>
       <NavA to="/">Contact</NavA>
     </Nav>

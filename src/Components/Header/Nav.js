@@ -11,7 +11,7 @@ const Nav = () => {
     <MobileMenu>
       <NavTriangle/>
       <StyledLink to="/">Home</StyledLink>
-      <StyledLink to="/">About</StyledLink>
+      <StyledLink to="/">Newest Content</StyledLink>
       <StyledLink to="/">Community</StyledLink>
       <StyledLink to="/">Contact</StyledLink>
     </MobileMenu>

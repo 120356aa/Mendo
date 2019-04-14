@@ -21,9 +21,9 @@ export const Nav = styled.div`
   export const NavA = styled(Link)`
     color: #F1F1F1;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    // font-weight: bold;
     padding: 20px 18px 20px 18px;
       &:hover { color: #8dbe55; }
   `;
